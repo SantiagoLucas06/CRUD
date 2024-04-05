@@ -1,0 +1,17 @@
+Este código Java define a classe `Cliente`, que representa um cliente com informações como nome, CPF, telefone, endereço, número, cidade e estado. Vou explicar o que foi utilizado neste código e por quê:
+
+1. **Atributos Privados**: Os atributos da classe (`nome`, `cpf`, `tel`, `end`, `numero`, `cidade`, `estado`) são definidos como privados, o que significa que só podem ser acessados diretamente dentro da própria classe.
+
+2. **Construtor**: O construtor da classe `Cliente` é utilizado para criar uma nova instância da classe e inicializar seus atributos com os valores fornecidos.
+3. Ele recebe parâmetros como nome, CPF, telefone, endereço, número, cidade e estado e os atribui aos respectivos atributos da classe.
+
+4. **Métodos Getters e Setters**: Métodos getters são utilizados para obter os valores dos atributos da classe e setters são utilizados para definir os valores dos atributos. Eles permitem o acesso controlado aos atributos da classe, seguindo o princípio de encapsulamento.
+
+5. **Método `equals()`**: Este método é sobrescrito para comparar dois objetos `Cliente` com base em seus CPFs. Ele retorna `true` se os CPFs forem iguais e `false` caso contrário.
+
+6. **Método `hashCode()`**: Este método é sobrescrito para gerar um código hash baseado no CPF do cliente. Ele é utilizado em estruturas de dados como tabelas de hash para identificar objetos de forma eficiente.
+
+7. **Método `toString()`**: Este método é sobrescrito para retornar uma representação em forma de string do objeto `Cliente`, contendo o nome e o CPF do cliente.
+
+Em resumo, o código utiliza princípios de encapsulamento para proteger os atributos da classe, fornece métodos getters e setters para acesso controlado a esses atributos, e implementa métodos `equals()`, `hashCode()` e `toString()` para permitir a comparação, hashing e representação de objetos `Cliente`. 
+Isso torna a classe `Cliente` mais robusta e fácil de usar em um sistema Java.
